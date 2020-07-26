@@ -4,10 +4,9 @@
 <!--	  <meta charset="utf-8">-->
 <!--	  <meta http-equiv="x-ua-compatible" content="ie=edge">-->
 <!--	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-	   Use the title from a page's frontmatter if it has one
 <!--	  <title>Home</title>-->
 <!--	  <meta charset="utf-8">-->
-	  <meta name=”description” content=”The Woodbury Antiques and Flea Market is the largest CT flea market in 2018”>
+<!--	  <meta name=”description” content=”The Woodbury Antiques and Flea Market is the largest CT flea market in 2018”>-->
 	  <link rel="canonical" href="http://www.woodburyflea.net/">
 	
 	  <meta property="og:locale" content="en_US">
@@ -26,7 +25,6 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
 	
-	  <%= stylesheet_link_tag 'site.css' %>
 	  <%= stylesheet_link_tag 'animate.css' %>
 	  <%= stylesheet_link_tag 'flexslider.css' %>
 	  <%= stylesheet_link_tag 'prettyPhoto.css' %>
@@ -34,12 +32,19 @@
 	  <%= stylesheet_link_tag 'style.css' %>
 	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" />
 	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	  <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all' %>
+	  <%#= stylesheet_link_tag 'bootstrap.min.css', media: 'all' %>
 
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+
+	  <p class="notice"><%= notice %></p>
+	  <p class="alert"><%= alert %></p>
+	  
+	  <%= yield %>
+   
+	  <%= render 'layouts/footer' %>
   </body>
 
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>

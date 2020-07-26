@@ -32,7 +32,7 @@
 			<section class="call_to_action">
 				<h2>
 					<center><i class="fa fa-flag-checkered"></i></center><br>
-					The market is open today Saturday September 28th and Sunday the 29t!!<br> We look forward to seeing you here!
+					<%= Content.find_by(name: "home").first.content %>
 				</h2>
 				<hr>
 				<h2>
@@ -58,7 +58,7 @@
 					<a href="https://www.facebook.com/woodburyflea/" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">like us on Facebook!</a>
 				</div><br>
 				
-				<a href="/directions" class="btn btn-primary btn-lg">Get Directions!</a>
+				<a href="<%= pages_directions_path %>" class="btn btn-primary btn-lg">Get Directions!</a>
 				<a href="https://www.facebook.com/woodburyflea/" class="btn btn-success btn-lg">Facebook Message Us!</a>
 			</section>
 			<section class="features_teasers_wrapper">
