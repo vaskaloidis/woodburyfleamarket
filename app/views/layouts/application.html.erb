@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--	  <meta charset="utf-8">-->
+<!--	  <meta http-equiv="x-ua-compatible" content="ie=edge">-->
+<!--	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+	   Use the title from a page's frontmatter if it has one
+<!--	  <title>Home</title>-->
+<!--	  <meta charset="utf-8">-->
+	  <meta name=”description” content=”The Woodbury Antiques and Flea Market is the largest CT flea market in 2018”>
+	  <link rel="canonical" href="http://www.woodburyflea.net/">
+	
+	  <meta property="og:locale" content="en_US">
+	  <meta property="og:type" content="website">
+	  <meta property="og:title" content="Home | The Woodbury Antiques and Flea Market">
+	  <meta property="og:url" content="http://www.woodburyflea.net">
+	  <meta property="og:site_name" content="The Woodbury Antiques and Flea Market">
+	  <meta name="twitter:card" content="The best CT Flea Market in 2018">
+	  <meta name="twitter:title" content="Home | The New Woodbury Flea Market">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="/images/favicon.ico" rel="icon" type="image/ico" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+	
+	  <%= stylesheet_link_tag 'site.css' %>
+	  <%= stylesheet_link_tag 'animate.css' %>
+	  <%= stylesheet_link_tag 'flexslider.css' %>
+	  <%= stylesheet_link_tag 'prettyPhoto.css' %>
+	  <%= stylesheet_link_tag 'theme.css' %>
+	  <%= stylesheet_link_tag 'style.css' %>
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" />
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	  <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all' %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<%= javascript_include_tag 'bootstrap.min.js' %>
+<%= javascript_include_tag 'woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js' %>
+<%= javascript_include_tag 'prettyPhoto_3.1.5/jquery.prettyPhoto.js' %>
+<%= javascript_include_tag 'isotope/jquery.isotope.min.js' %>
+<%= javascript_include_tag 'jquery.ui.totop.js' %>
+<%= javascript_include_tag 'easing.js' %>
+<%= javascript_include_tag 'wow.min.js' %>
+<%= javascript_include_tag 'snap.svg-min.js' %>
+<%= javascript_include_tag 'restart_theme.js' %>
+<%= javascript_include_tag 'collapser.js' %>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115473189-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36641202-1"></script>
+<%= javascript_include_tag 'google_analytics.js' %>
+<%= javascript_include_tag 'privy.js' %>
+<%= javascript_include_tag 'modernizr.js' %>
+
+</html>
