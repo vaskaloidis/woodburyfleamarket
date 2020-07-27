@@ -32,7 +32,7 @@
 			<section class="call_to_action">
 				<h2>
 					<center><i class="fa fa-flag-checkered"></i></center><br>
-					<%= Content.find_by(section: "home").content %>
+					<%= Content.find_by(section: "home").content.html_safe %>
 				</h2>
 				<hr>
 				<h2>
@@ -51,6 +51,8 @@
 				<h4>We are open Saturday and Sunday mornings from 7:30 am until 2:30 pm. Free admission and free parking!</h4>
 				<h4>To become a vendor Contact us or just drive in after 6:30 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table. The vendor fee for <strong>Saturday is $20</strong> and the fee for <strong>Sunday is $10</strong>. Customers are <strong>always free!</strong> Reduced rates apply to vendors who need more than one space.
 				</h4>
+				<br>
+				<h4>We are located at <strong>25 Sherman Hill Rd. Woodbury, CT. 06798</strong></h4>
 				<div>
 					<span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">For more information please call: (203) 263-6217, email:</span>
 					<a href="mailto:thenewwoodburyfleamarket@gmail.com" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">thenewwoodburyfleamarket@gmail.com</a>
@@ -78,19 +80,13 @@
 					<div class="feature_teaser col-sm-4 col-md-4">
 						<h1><i class="fa fa-group fa-2"></i></h1>
 						<h3>Vendors</h3>
-						<p>Gus and Anne Kaloidis took over the market in 2006, and have been running it as a family business
-							ever since... <a href="/gus">
-							<small>More...</small>
-						</a></p>
+						<p>To become a vendor Contact us or just drive in after 6:30 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table</p>
 					</div>
 					<div class="feature_teaser col-sm-4 col-md-4">
 						<h1><i class="fa fa-user fa-2"></i></h1>
 						<h3>About the Owner</h3>
 						<p>Gus Kaloidis has been in the restaurant business for almost forty years, until he sold his last
-							restaurant (Elenni's) six years ago... (203) 263-6217, <a
-							href="mailto:thenewwoodburyfleamarket@gmail.com">thenewwoodburyfleamarket@gmail.com</a>, or
-							<a href="https://www.facebook.com/pages/Woodbury-Antiques-Flea-Market/194628543955095">like us
-								on Facebook!</a><br>
+							restaurant (Elenni's) six years ago. <a href="<%= pages_gus_path%>"><small>More...</small></a></p>
 						</p>
 					</div>
 				</div>
