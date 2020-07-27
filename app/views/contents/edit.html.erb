@@ -1,6 +1,10 @@
-<h1>Editing Content</h1>
-
-<%= render 'form', content: @content %>
-
-<%= link_to 'Show', @content %> |
-<%= link_to 'Back', contents_path %>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h1>Editing Content</h1>
+			<strong>Section:</strong> Content<br>
+			
+			<%= render 'form', content: @content %>
+		</div>
+	</div>
+</div>

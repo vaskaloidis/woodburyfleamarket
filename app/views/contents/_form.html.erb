@@ -12,16 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :section %>
-    <%= form.text_field :section %>
+	  <%= text_area_tag :content, content.content, :class => "tinymce", :rows => 12, :cols => 120 %>
   </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+	
+	<%= tinymce %>
+	
+	<div class="actions">
+    <%= form.submit "Save", :class => 'btn btn-success' %>
+		<%= link_to 'Back', contents_path, :class => 'btn btn-danger' %>
   </div>
 <% end %>

@@ -22,7 +22,7 @@ development:
   <<: *default
   username: postgres
   password: ''
-  database: woodburylea_development
+  database: woodburyflea_development
   pool: 5
   
   # The specified database role being used to connect to postgres.
