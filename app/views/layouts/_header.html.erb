@@ -26,6 +26,12 @@
 					
 					<% if current_page?(pages_about_path) %> <li class="active"><%= link_to('About', pages_about_path) %></li>
 					<% else %><li><%= link_to('About', pages_about_path) %></li><% end %>
+					
+					<% if user_signed_in? %>
+						<li><a href="<%= admin_path %>">Admin</a></li>
+						<li><a href="<%= destroy_user_session_path %>" >Logout</a></li>
+					<% end %>
+					
 				</ul>
 			</div>
 		</div>

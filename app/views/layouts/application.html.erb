@@ -42,7 +42,7 @@
     <%= render 'layouts/header' %>
 
     <% flash.each do |type, msg| %>
-		  <div class="notice">
+		  <div class="alert alert-<%= type %>">
 			  <%= msg %>
 		  </div>
     <% end %>
@@ -57,7 +57,7 @@
 <%= javascript_include_tag 'woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js' %>
 <%= javascript_include_tag 'prettyPhoto_3.1.5/jquery.prettyPhoto.js' %>
 <%= javascript_include_tag 'isotope/jquery.isotope.min.js' %>
-<%= javascript_include_tag 'jquery.ui.totop.js' %>
+<%#= javascript_include_tag 'jquery.ui.totop.js' %>
 <%= javascript_include_tag 'easing.js' %>
 <%= javascript_include_tag 'wow.min.js' %>
 <%= javascript_include_tag 'snap.svg-min.js' %>
