@@ -39,7 +39,6 @@
 </head>
 
 <body>
-<div class="container-fluid">
 	<%= render 'layouts/header' %>
 	
 	<% flash.each do |type, msg| %>
@@ -51,7 +50,6 @@
 	<%= yield %>
 	
 	<%= render 'layouts/footer' %>
-</div>
 </body>
 
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
