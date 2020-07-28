@@ -29,7 +29,13 @@
 					<h3>Copyright</h3>
 					Copyright The Woodbury Flea Market ©2018<br>
 					Sherman Great Meadows LLC. all rights reserved<br>
-					<%= link_to('Login', new_user_session_path) %>
+					<% if user_signed_in? %>
+						<a href="<%= admin_path %>">Admin</a> |
+						<a href="<%= destroy_user_session_path %>" >Logout</a>
+					<% else %>
+						<%= link_to('Login', new_user_session_path) %>
+					<% end %>
+
 				</div>
 				<div class="footer_teaser col-sm-4 col-md-4" id="latest-flickr-images">
 					<h3>Website Developed by </h3>

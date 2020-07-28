@@ -1,5 +1,5 @@
 class ContentsController < ApplicationController
-  before_action :set_content, only: [:show, :edit, :update, :destroy]
+  before_action :set_content, only: [:show, :edit, :update]
   before_action :authenticate_user!
 
   # GET /contents
@@ -40,12 +40,6 @@ class ContentsController < ApplicationController
     end
   end
 
-  # DELETE /contents/1
-  def destroy
-    @content.destroy
-    redirect_to contents_url, notice: 'Content was successfully destroyed.'
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_content
@@ -54,6 +48,7 @@ class ContentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def content_params
-      params.require(:content).permit(:section, :content)
+      # params
+      params.permit(:section, :content)
     end
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	get 'pages/about', to: 'high_voltage/pages#show', id: 'about'
 	get 'pages/directions', to: 'high_voltage/pages#show', id: 'directions'
 	get 'pages/gus', to: 'high_voltage/pages#show', id: 'gus'
+	get 'admin', to: 'contents#index', id: 'admin_home'
 	authenticate :user do
 		resources :contents
 	end
