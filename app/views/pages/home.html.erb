@@ -1,93 +1,108 @@
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
-	<div id="main_flexslider" class="flexslider">
-		<ul class="slides">
-			<li class="item" style="background-image: url(<%= image_path("/sliders/market1.jpg") %>">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1 class="skincolored">Every <strong>Saturday</strong> and <strong>Sunday</strong> <br></h1>
-					</div>
-				</div>
-			</li>
-			<li class="item" style="background-image: url(<%= image_path("/sliders/market2.jpg") %>">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Customers are <strong>Always Free</strong> </h1>
-					</div>
-				</div>
-			</li>
-			<li class="item" style="background-image: url(<%= image_path("/sliders/market3.jpg") %>)">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1 class="skincolored">The <strong>best vendor rates</strong> in CT!</h1>
-					</div>
-				</div>
-			</li>
+  <div id="main_flexslider" class="flexslider">
+    <ul class="slides">
+      <li class="item" style="background-image: url(<%= image_path("/sliders/market1.jpg") %>">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="skincolored">Every <strong>Saturday</strong> and <strong>Sunday</strong> <br></h1>
+          </div>
+        </div>
+      </li>
+      <li class="item" style="background-image: url(<%= image_path("/sliders/market2.jpg") %>">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Customers are <strong>Always Free</strong></h1>
+          </div>
+        </div>
+      </li>
+      <li class="item" style="background-image: url(<%= image_path("/sliders/market3.jpg") %>)">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="skincolored">The <strong>best vendor rates</strong> in CT!</h1>
+          </div>
+        </div>
+      </li>
 
-		</ul>
-	</div>
+    </ul>
+  </div>
 </section>
 <div class="main">
-	<div class="container-fluid">
-		<br>
-			<section class="call_to_action">
-				<h2>
-					<center><i class="fa fa-flag-checkered"></i></center><br>
-					<%= Content.find_by(section: "home").content.html_safe %>
-				</h2>
-				<hr>
-				<h2>
-					We are open for the 2021 season!!<br> Check back for updates!
-				</h2>
-			</section>
-			<center>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</center>
+  <div class="container-fluid">
+    <br>
+    <section class="call_to_action">
+      <h2>
+        <center><i class="fa fa-flag-checkered"></i></center>
+        <br>
+        <%= Content.find_by(section: "home").content.html_safe %>
+      </h2>
+      <hr>
+      <h2>
+        We are open for the 2021 season!!<br> Check back for updates!
+      </h2>
+    </section>
+    <center>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </center>
 
-			<section class="call_to_action home_page_intro">
-				<h1>Come visit The Woodbury CT Antiques and Flea Market</h1><br>
+    <section class="call_to_action home_page_intro">
+      <h1>Come visit The Woodbury CT Antiques and Flea Market</h1><br>
 
-				<h4>We are open Saturday and Sunday mornings from 7:30 am until 2:30 pm. Free admission and free parking!</h4>
-				<h4>To become a vendor Contact us or just drive in after 6:00 AM any Saturday or Sunday and you will be given a space (23x20) to set up your table. The vendor fee for <strong>Saturday is $20</strong> and the fee for <strong>Sunday is $10</strong>. <strong>Customers are always free!</strong> Reduced rates apply to vendors who need more than one space.
-				</h4>
-				<br>
-				<h4>We are located at <strong>44 Sherman Hill Rd. Woodbury, CT. 06798</strong></h4>
-				<div>
-					<span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">For more information please call: (203) 263-6217, email:</span>
-					<a href="mailto:thenewwoodburyfleamarket@gmail.com" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">thenewwoodburyfleamarket@gmail.com</a>
-					<span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">, or </span>
-					<a href="https://www.facebook.com/woodburyflea/" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">like us on Facebook!</a>
-				</div><br>
+      <h4>The Market is open Saturday and Sunday, weather permitting.</h4>
+      <h4>Vendors may arrive at 6 AM or later to get a spot.</h4>
+      <h4>The market is open to customers at 6:30 AM. The market closes at 2 PM.</h4><br>
+      <center>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </center>
 
-				<a href="<%= pages_directions_path %>" class="btn btn-primary btn-lg">Get Directions!</a>
-				<a href="https://www.facebook.com/woodburyflea/" class="btn btn-success btn-lg">Facebook Message Us!</a>
-			</section>
-			<section class="features_teasers_wrapper">
-				<div class="row">
-					<div class="feature_teaser col-sm-4 col-md-4">
-						<h1><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
-						<p>
-						<h3>Location</h3>
-						<address>
-							<strong>The Woodbury Flea Market</strong><br>
-							4 Sherman Hill Road (RT64)<br>
-							Woodbury CT, 06798<br>
-							<abbr title="phone"> (203) 263-6217 </abbr>
-						</address>
-					</div>
-					<div class="feature_teaser col-sm-4 col-md-4">
-						<h1><i class="fa fa-group fa-2"></i></h1>
-						<h3>Vendors</h3>
-						<p>To become a vendor Contact us or just drive in after 6:00 AM any Saturday or Sunday and you will be given a space 25ft (long) to set up your table</p>
-					</div>
-					<div class="feature_teaser col-sm-4 col-md-4">
-						<h1><i class="fa fa-user fa-2"></i></h1>
-						<h3>About the Owner</h3>
-						<p>Gus Kaloidis has been in the restaurant business for almost forty years, until he sold his last
-							restaurant (Elenni's) six years ago. <a href="<%= pages_gus_path%>"><small>More...</small></a></p>
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
+      <h4>To become a vendor Contact us or just drive in after 6:00 AM any Saturday or Sunday and you will be given a
+        space (23x20) to set up your table. The vendor fee for <strong>Saturday is $20</strong> and the fee for
+        <strong>Sunday is $10</strong>. <strong>Customers are always free!</strong> Reduced rates apply to vendors who
+        need more than one space.
+      </h4>
+      <br>
+      <h4>We are located at <strong>44 Sherman Hill Rd. Woodbury, CT. 06798</strong></h4>
+      <div>
+        <span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">For more information please call: (203) 263-6217, email:</span>
+        <a href="mailto:thenewwoodburyfleamarket@gmail.com" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">thenewwoodburyfleamarket@gmail.com</a>
+        <span style="color: inherit; font-family: inherit; font-size: 18px; line-height: 1.1;">, or </span>
+        <a href="https://www.facebook.com/woodburyflea/" style="font-family: inherit; font-size: 18px; line-height: 1.1; background-color: rgb(255, 255, 255);">like
+          us on Facebook!</a>
+      </div>
+      <br>
+
+      <a href="<%= pages_directions_path %>" class="btn btn-primary btn-lg">Get Directions!</a>
+      <a href="https://www.facebook.com/woodburyflea/" class="btn btn-success btn-lg">Facebook Message Us!</a>
+    </section>
+    <section class="features_teasers_wrapper">
+      <div class="row">
+        <div class="feature_teaser col-sm-4 col-md-4">
+          <h1><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+          <p>
+          <h3>Location</h3>
+          <address>
+            <strong>The Woodbury Flea Market</strong><br>
+            4 Sherman Hill Road (RT64)<br>
+            Woodbury CT, 06798<br>
+            <abbr title="phone"> (203) 263-6217 </abbr>
+          </address>
+        </div>
+        <div class="feature_teaser col-sm-4 col-md-4">
+          <h1><i class="fa fa-group fa-2"></i></h1>
+          <h3>Vendors</h3>
+          <p>To become a vendor Contact us or just drive in after 6:00 AM any Saturday or Sunday and you will be given a
+            space 25ft (long) to set up your table</p>
+        </div>
+        <div class="feature_teaser col-sm-4 col-md-4">
+          <h1><i class="fa fa-user fa-2"></i></h1>
+          <h3>About the Owner</h3>
+          <p>Gus Kaloidis has been in the restaurant business for almost forty years, until he sold his last
+            restaurant (Elenni's) six years ago. <a href="<%= pages_gus_path %>"><small>More...</small></a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
