@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 7.0.4'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -11,7 +11,9 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'high_voltage'
-gem 'carrierwave', '~> 2.0'
+# gem 'carrierwave', '~> 2.0'
+# gem 'carrierwave', '~> 2.0', git: 'https://github.com/splitwise/carrierwave'
+gem 'carrierwave', git: 'https://github.com/splitwise/carrierwave'
 gem 'devise'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rollbar'
